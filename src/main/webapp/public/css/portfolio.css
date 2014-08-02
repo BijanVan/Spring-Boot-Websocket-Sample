@@ -1,0 +1,28 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 940px;
+  }
+}
+
+.table th.number, .table td.number {
+  text-align: right;
+}
+
+.table td.trade-buttons {
+  text-align: center;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+#main-content {
+  margin: 0 auto;
+  padding: 10px 20px 0px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+}

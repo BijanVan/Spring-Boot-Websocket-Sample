@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Sign in &middot; Stock Trading Portfolio Sign in</title>
+  <link rel="stylesheet" href="public/css/bootstrap.css"/>
+  <link rel="stylesheet" href="public/css/bootstrap-theme.css"/>
+  <link rel="stylesheet" href="public/css/login.css"/>
+</head>
+<body ng-controller="LoginController as login">
+<div class="container">
+  <form role="form" method="post" action="login.html">
+    <div ng-show="loginFailed" role="alert" class="alert alert-danger">
+      <strong>Invalid username or password!</strong>
+    </div>
+    <h3 class="text-muted">Please sign in</h3>
+
+    <div class="form-group">
+      <label for="username">User Name</label>
+      <input type="text" class="form-control" placeholder="Enter User Name" name="username" id="username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" placeholder="Enter Password" name="password" id="password">
+    </div>
+    <button class="btn btn-primary" type="submit">Sign in</button>
+    <hr>
+    <p class="text-info">
+      <small>
+        Log in as <strong>user1/pass1</strong> or <strong>user2/pass2</strong><br>
+        See <code>WebSecurityConfig.java</code></small>
+    </p>
+  </form>
+</div>
+
+<script src="public/js/angular.min.js"></script>
+<script src="public/js/login.js"></script>
+</body>
+</html>
